@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft.h                                               :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: argrouss <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: argrouss <argrouss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/28 19:58:45 by argrouss          #+#    #+#             */
-/*   Updated: 2024/02/29 04:07:07 by argrouss         ###   ########.fr       */
+/*   Created: 2024/02/29 05:50:14 by argrouss          #+#    #+#             */
+/*   Updated: 2024/02/29 05:50:32 by argrouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_H
-# define FT_H
-
-void	ft_putchar(char c);
-void	ft_swap(int *a, int *b);
-void	ft_putstr(char *str);
-int		ft_strlen(char *str);
-int		ft_strcmp(char *s1, char *s2);
-
-#endif
+#include "ft_abs.h"
+#include <stdio.h>
+int main(){
+    printf("%d\n",ABS(-30));
+    printf("%d\n",ABS(2450));
+    printf("%d\n",ABS(0));
+    printf("%d\n",ABS(-2147400000));
+}
